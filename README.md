@@ -6,7 +6,7 @@ _A warm wave band_
 * Natalia Asoka Wanigasooriya
 * Fedor Ivashchenko
 
-## our slyte and genre
+## our style and genre
 the warm wave style relies on mostly warm synth sounds and combines the following ones:
 * new wave
 * synthpop
