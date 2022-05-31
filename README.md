@@ -20,6 +20,6 @@ https://lewisacids.bandcamp.com
 ## why do we need a GitHub repo?
 here be our lyrics and hopefully someday chords
 
-there is an idea to a add wiki-like explanations to them. to make a hadbook for our songs and albums.
+there is an idea to a add wiki-like explanations to them. to make a hadbook for our songs and albums
 
 GitHub gives us a convenient tool to do this and allows our listeners easily help us any time they like

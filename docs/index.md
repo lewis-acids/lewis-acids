@@ -7,7 +7,7 @@ hide:
 
 # Lewis Acids
 
-_A warm wave music band_
+> A warm wave music band
 
 ## our core lineup
 * Natalia Asoka Wanigasooriya
@@ -22,7 +22,7 @@ the warm wave style relies on mostly warm synth sounds and combines the followin
 * pop rock
 
 ## our music
-https://lewisacids.bandcamp.com
+[https://lewisacids.bandcamp.com]
 
 ## our album info and song lyrics
 * [Queen of Diamonds](https://lewisacids.github.io/queen-of-diamonds)
@@ -30,6 +30,6 @@ https://lewisacids.bandcamp.com
 ## why do we need a GitHub repo?
 here be our lyrics and hopefully someday chords
 
-there is an idea to a add wiki-like explanations to them. to make a hadbook for our songs and albums.
+there is an idea to a add wiki-like explanations to them. to make a hadbook for our songs and albums
 
 GitHub gives us a convenient tool to do this and allows our listeners easily help us any time they like

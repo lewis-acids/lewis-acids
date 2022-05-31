@@ -5,6 +5,8 @@ theme:
   palette:
     primary: white
   logo: images/lewisacids_logo_small.jpg
+  features:
+    - navigation.expand
 
 extra_css:
   - css/extra.css
@@ -12,4 +14,5 @@ extra_css:
 nav:
   - Home: 'index.md'
   - Bandcamp: 'https://lewisacids.bandcamp.com'
-  - 'Queen of Diamonds': 'https://lewisacids.github.io/queen-of-diamonds'
+  - Discography:
+    - 'Queen of Diamonds': 'https://lewisacids.github.io/queen-of-diamonds'
