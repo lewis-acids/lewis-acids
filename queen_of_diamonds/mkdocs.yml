@@ -5,19 +5,24 @@ theme:
   palette:
     primary: white
   logo: images/lewisacids_logo_small.jpg
+  features:
+    - navigation.expand
 
 extra_css:
   - css/extra.css
 
 nav:
-  - 'Perfect Crystal Overture': '01_perfect_crystal_overture.md'
-  - 'Ace of Acid': '02_ace_of_acid.md'
-  - 'Love over Ethernet': '03_love_over_ethernet.md'
-  - 'I See You Well [Visible Mix]': '04_i_see_you_well_visible_mix.md'
-  - Hips: '05_hips.md'
-  - SSD: '06_ssd.md'
-  - Inorganic: '07_inorganic.md'
-  - 'Wipe Me Out': '08_wipe_me_out.md'
-  - 'Under Wing': '09_under_wing.md'
-  - 'The Sense': '10_the_sense.md'
-  - 'Liquid State Drive': '11_liquid_state_drive.md'
+  - 'Band home page': 'https://lewisacids.github.io'
+  - 'Album home page': 'index.md'
+  - Tracklist:
+    - 'Perfect Crystal Overture': '01_perfect_crystal_overture.md'
+    - 'Ace of Acid': '02_ace_of_acid.md'
+    - 'Love over Ethernet': '03_love_over_ethernet.md'
+    - 'I See You Well [Visible Mix]': '04_i_see_you_well_visible_mix.md'
+    - Hips: '05_hips.md'
+    - SSD: '06_ssd.md'
+    - Inorganic: '07_inorganic.md'
+    - 'Wipe Me Out': '08_wipe_me_out.md'
+    - 'Under Wing': '09_under_wing.md'
+    - 'The Sense': '10_the_sense.md'
+    - 'Liquid State Drive': '11_liquid_state_drive.md'

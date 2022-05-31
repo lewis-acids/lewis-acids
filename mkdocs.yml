@@ -1,0 +1,15 @@
+site_name: Lewis Acids - a warm wave music band
+
+theme:
+  name: material
+  palette:
+    primary: white
+  logo: images/lewisacids_logo_small.jpg
+
+extra_css:
+  - css/extra.css
+
+nav:
+  - Home: 'index.md'
+  - Bandcamp: 'https://lewisacids.bandcamp.com'
+  - 'Queen of Diamonds': 'https://lewisacids.github.io/queen-of-diamonds'
