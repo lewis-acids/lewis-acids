@@ -1,0 +1,91 @@
+# https://taskfile.dev
+
+version: "3"
+# this Taskfile
+
+vars:
+  GREETING: |-
+    Usage:
+    task prepub-index, task p-index             prepare index page to push to lewisacids.github.io
+    task prepub-qod, task p-qod                 prepare Queen of Diamonds pages to push to lewisacids.github.io
+    task prepub-all, task p-all                 prepare all pages to push to lewisacids.github.io
+    
+
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+      - task -a
+    silent: true
+
+  # index page aka homepage
+
+  build-index:
+    cmds:
+      # feel free to edit and add paths if necessary
+      - mkdocs build
+    status:
+      - test -d ./site
+
+  move-site-index:
+    cmds:
+      - mv -f ./site/* ~/Lewis\ Acids/repos/lewisacids.github.io
+
+  prepub-index:
+    cmds:
+      - task build-index
+      - task move-site-index
+
+  p-index:
+    cmds:
+      - task prepub-index
+
+  # Queen of Diamonds
+        
+  build-qod:
+    cmds:
+      # feel free to edit and add paths if necessary
+      - cd queen_of_diamonds && mkdocs build
+    status:
+      - test -d queen_of_diamonds/site
+    
+  rename-site-qod:
+    cmds:
+      - mv ./queen_of_diamonds/site ./queen_of_diamonds/queen-of-diamonds
+    status:
+      - test -d docs/queen-of-diamonds
+
+  purge-destination-qod:
+    cmds:
+      - rm -r ~/Lewis\ Acids/repos/lewisacids.github.io/queen-of-diamonds
+    status:
+      - test ! -d ~/Lewis\ Acids/repos/lewisacids.github.io/queen-of-diamonds
+
+  move-site-qod:
+    cmds:
+      - mv ./queen_of_diamonds/queen-of-diamonds ~/Lewis\ Acids/repos/lewisacids.github.io
+    status:
+      - test -d ~/Lewis\ Acids/repos/lewisacids.github.io/queen-of-diamonds
+
+  prepub-qod:
+    cmds:
+      - task build-qod
+      - task rename-site-qod
+      - task purge-destination-qod
+      - task move-site-qod
+
+  p-qod:
+    cmds:
+      - task prepub-qod
+
+  # prepare all
+
+  prepub-all:
+    cmds:
+      - task prepub-index
+      - task prepub-qod
+
+  p-all:
+    cmds:
+      - task prepub-all

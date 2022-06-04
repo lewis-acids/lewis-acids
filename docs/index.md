@@ -15,6 +15,7 @@ hide:
 
 ## our style and genre
 the warm wave style relies on mostly warm synth sounds and combines the following ones:
+
 * new wave
 * synthpop
 * indie pop
@@ -22,7 +23,7 @@ the warm wave style relies on mostly warm synth sounds and combines the followin
 * pop rock
 
 ## our music
-[https://lewisacids.bandcamp.com]
+* [on Bandcamp](https://lewisacids.bandcamp.com)
 
 ## our album info and song lyrics
 * [Queen of Diamonds](https://lewisacids.github.io/queen-of-diamonds)

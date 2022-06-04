@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-A first chapter where the Ace of Acid meets the Queen of Diamonds
+A first chapter where Ace of Acid meets Queen of Diamonds
 
 >lyrics
 

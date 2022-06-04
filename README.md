@@ -8,6 +8,7 @@ _A warm wave band_
 
 ## our style and genre
 the warm wave style relies on mostly warm synth sounds and combines the following ones:
+
 * new wave
 * synthpop
 * indie pop
@@ -18,7 +19,7 @@ the warm wave style relies on mostly warm synth sounds and combines the followin
 https://lewisacids.bandcamp.com
 
 ## why do we need a GitHub repo?
-here be our lyrics and hopefully someday chords
+[here](https://lewisacids.github.io) be our lyrics and hopefully someday chords
 
 there is an idea to a add wiki-like explanations to them. to make a hadbook for our songs and albums
 
