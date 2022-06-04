@@ -9,8 +9,6 @@ vars:
     task prepub-index, task p-index             prepare index page to push to lewisacids.github.io
     task prepub-qod, task p-qod                 prepare Queen of Diamonds pages to push to lewisacids.github.io
     task prepub-all, task p-all                 prepare all pages to push to lewisacids.github.io
-    
-
 
 tasks:
   default:
@@ -28,13 +26,36 @@ tasks:
     status:
       - test -d ./site
 
+  purge-destination-index:
+    cmds:
+      - |-
+        rm -rf ~/Lewis\ Acids/repos/lewisacids.github.io/index.html \
+        ~/Lewis\ Acids/repos/lewisacids.github.io/404.html \
+        ~/Lewis\ Acids/repos/lewisacids.github.io/sitemap.xml \
+        ~/Lewis\ Acids/repos/lewisacids.github.io/sitemap.xml.gz \
+        ~/Lewis\ Acids/repos/lewisacids.github.io/assets \
+        ~/Lewis\ Acids/repos/lewisacids.github.io/css \
+        ~/Lewis\ Acids/repos/lewisacids.github.io/images \
+        ~/Lewis\ Acids/repos/lewisacids.github.io/search
+    status:
+      - test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/index.html && \
+        test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/404.html && \
+        test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/sitemap.xml && \
+        test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/sitemap.xml.gz && \
+        test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/assets && \
+        test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/css && \
+        test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/images && \
+        test ! -f ~/Lewis\ Acids/repos/lewisacids.github.io/search
+
   move-site-index:
     cmds:
-      - mv -f ./site/* ~/Lewis\ Acids/repos/lewisacids.github.io
+      - mv ./site/* ~/Lewis\ Acids/repos/lewisacids.github.io
+      - rm -r ./site
 
   prepub-index:
     cmds:
       - task build-index
+      - task purge-destination-index
       - task move-site-index
 
   p-index:
