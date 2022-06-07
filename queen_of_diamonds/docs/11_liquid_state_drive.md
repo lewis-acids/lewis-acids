@@ -7,4 +7,4 @@ An additional sensational chapter, sweet and psychedelic, closing the album. Vir
 
 > lyrics
 
-    Liquid state drive!
+Liquid state drive!
